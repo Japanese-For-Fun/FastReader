@@ -1,20 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-//import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { MainModule } from './components/main/main.module';
-import { MainComponent } from './components/main/main.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    //PdfViewerComponent,
-    MainComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    MainModule
+    MainModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,10 +9,12 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 export class UploaderComponent implements OnInit {
   src: string = 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf';
+  page: number = 1;
   constructor(private service: UploaderService) {
   }
 
   ngOnInit() {
+    console.log('log');
   }
 
   onUpload(event) {
