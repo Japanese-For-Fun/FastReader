@@ -9,6 +9,7 @@ import { MainComponent } from './main.component';
 
 @NgModule({
   declarations: [
+    MainComponent,
     UploaderComponent,
     ContentComponent,
     PdfViewerComponent
@@ -19,6 +20,12 @@ import { MainComponent } from './main.component';
   providers: [
     UploaderService
   ],
-  bootstrap: [MainComponent]
+  bootstrap: [MainComponent],
+  exports: [
+    MainComponent,
+    UploaderComponent,
+    ContentComponent,
+    PdfViewerComponent
+  ]
 })
 export class MainModule { }
