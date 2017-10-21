@@ -6,13 +6,15 @@ import { MainComponent } from './components/main/main.component';
 import { UploaderComponent } from './components/main/uploader/uploader.component';
 import { ContentComponent } from './components/main/content/content.component';
 import { UploaderService } from './components/main/uploader/uploader.service';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     UploaderComponent,
-    ContentComponent
+    ContentComponent,
+    PdfViewerComponent
   ],
   imports: [
     BrowserModule
