@@ -14,7 +14,7 @@ export class UploaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('log');
+    console.log('UploaderComponent is at ngOnInit');
   }
 
   onUpload(event) {
